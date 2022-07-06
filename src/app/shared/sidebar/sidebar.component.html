@@ -5,7 +5,11 @@
   </h3>
   <hr class="text-white">
   <div class="list-group list-reset">
-    <a *ngFor="let history of historial" href="#" class="list-group-item list-group-item-action">
+    <a 
+        (click)="buscar( history )"
+        *ngFor="let history of historial" 
+        href="#" 
+        class="list-group-item list-group-item-action">
       {{ history | titlecase }}
     </a>
   </div>
